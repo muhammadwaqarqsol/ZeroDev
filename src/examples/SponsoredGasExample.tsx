@@ -69,8 +69,6 @@ export function SponsoredGasExample({ label = undefined }) {
   return (
     <Page title={"Pay Gas for Users"} description={description} docs={"https://docs.zerodev.app/use-wallets/pay-gas-for-users"}>
       <Flex align={'center'} justify={'center'} direction={'column'} gap={'1rem'} style={{ flex: 1 }}>
-        <strong style={{ fontSize: '1.5rem' }}>NFT Count</strong>
-        <div style={{ fontSize: "2rem", fontWeight: 'medium', width: 100, height: 100, borderRadius: 50, display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', border: '10px solid #2B8DE3' }}>{`${balance ?? 0}`}</div>
         <Button
           loading={balanceChanging}
           size={'lg'}
