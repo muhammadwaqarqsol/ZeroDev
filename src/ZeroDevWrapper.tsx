@@ -16,7 +16,7 @@ import {
   twitterWallet,
 } from '@zerodevapp/wagmi/rainbowkit'
 
-const defaultProjectId = process.env.REACT_APP_ZERODEV_PROJECT_ID || 'b5486fa4-e3d9-450b-8428-646e757c10f6'
+const defaultProjectId = process.env.REACT_APP_ZERODEV_PROJECT_ID || '745c14f1-f587-44e4-a551-488d19c988ee'
 
 const { chains, provider, webSocketProvider } = configureChains(
   [polygonMumbai],

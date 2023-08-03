@@ -70,7 +70,6 @@ export function SponsoredGasExample({ label = undefined }) {
     <Page title={"Pay Gas for Users"} description={description} docs={"https://docs.zerodev.app/use-wallets/pay-gas-for-users"}>
       <Flex align={'center'} justify={'center'} direction={'column'} gap={'1rem'} style={{ flex: 1 }}>
         <Button
-          loading={balanceChanging}
           size={'lg'}
           onClick={handleClick}
         >

@@ -86,7 +86,6 @@ export function BatchExample() {
     <Page title={"Bundle Transactions"} description={description} docs={"https://docs.zerodev.app/use-wallets/batch-transactions"}>
       <Flex align={'center'} justify={'center'} mih={'100%'} direction={'column'} gap={'1rem'}>
         <Button
-          loading={balanceChanging}
           size={'lg'}
           onClick={handleClick}
         >

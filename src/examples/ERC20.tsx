@@ -23,15 +23,27 @@ export function ERC20({ label = undefined }) {
     enabled: true
   });
 
-  const { write: mint } = useContractWrite(config);
+  
 
- 
+  const { write: mint } = useContractWrite(config); 
+  const handleClick = async() => {
+    // if (mint ) {
+    console.log("check minting1")
 
-  const handleClick = useCallback(() => {
     if (mint ) {
-      mint();
+      console.log("check minting2")
+      const result = await mint();
+      console.log("Result :",result)
     }
-  }, [mint]);
+    // }
+  };
+
+  // const handleClick = useCallback(() => {
+  //   if (mint ) {
+  //     console.log("check minting")
+  //     mint();
+  //   }
+  // }, [mint]);
 
   function changetokenid(e: any) {
     setTokenid(parseInt(e.target.value));
